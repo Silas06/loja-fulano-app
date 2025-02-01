@@ -8,7 +8,7 @@ interface Props {
 
 export default function itemProduct({ product }: Props) {
   return (
-    <Link href={`/product/${product.id}`} asChild>
+    <Link href={`product/${product.id}`} asChild>
       <Pressable style={ styles.container}>
         <Image style={styles.img} source={{uri: product.image}} resizeMode="cover" />
         <View style={styles.info}>
